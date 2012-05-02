@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>javascript:function%20F(){var%20i=0,L=document.links,A;for(;i%3CL.length;i++){A=L[i];if(A.protocol=='javascript:'){A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F()</string>
+</dict>
+</plist>
