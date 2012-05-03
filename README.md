@@ -19,7 +19,7 @@ edited bookmark address should begin `javascript:function%20F…`
  
 **Safari**
 
-Bookmark this [iPhonelet](javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29)
+Bookmark this <a href="javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29" title="iPhonelet">iPhonelet</a>
 _javascript:_ link, *OR* make use of an `iphonelet.webloc` file from the repository.
 
 ## Use ##
