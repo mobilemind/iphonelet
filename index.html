@@ -1,1 +1,109 @@
-My Page
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv=content-type content="text/html;charset=utf-8">
+		<meta name=keywords content="hosted,github,jumpOnJuniper,jump,Juniper,bookmark,Bookmarklet,maker,generator,paste,login,pastelet,username,password">
+		<meta name="robots" content="index,follow">
+		<meta name="format-detection" content="telephone=no">
+		<!--
+		<link rel="shortcut icon" href="img/joj.ico">
+		<link rel="apple-touch-icon" href="img/joj-icon-57.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/joj-icon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/joj-icon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/joj-icon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/joj-icon-144.png">
+		-->
+		<link rel="canonical" href="http://mobilemind.github.com/iphonelet/">
+		<style type="text/css">
+			body {
+			  margin-top: 1.0em;
+			  background-color: #FFF;
+			  color: #333;
+			  font-family: Helvetica, Arial, FreeSans, san-serif;
+			}
+			#container {margin:0 auto; width:700px}
+			h1 {font-size: 3.8em; color: #000; margin-bottom: 3px}
+			h1 .small {font-size: 0.4em}
+			h1 a {text-decoration: none}
+			h2 {font-size: 1.5em; color: #000; font-weight: bold}
+			h3 {font-size: 1.1em; font-weight:bold; color:#222;
+				vertical-align:bottom; margin-bottom:0; padding:0; text-transform:none}
+			a {color: #DE7008}
+			.description {font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic}
+			.download { float: right}
+			a:hover {color:#E0AD12}
+			pre {background: #000; color: #fff; padding: 15px}
+			hr {border: 0; width: 80%; border-bottom: 1px solid #aaa}
+			.footer {text-align:center; padding-top:30px; font-style: italic}
+		</style>
+		<title>iPhonelet</title>
+	</head>
+	<body>
+		<a href="http://github.com/mobilemind/iphonelet" title="Fork iPhonelet on GitHub">
+			<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+		</a>
+		<div id="container">
+			<h1>iPhonelet</h1>
+			<p>A meta-bookmarklet to make it possible to bookmark <code>javascript:</code>
+			bookmarklets in browsers that <em>only</em> allow bookmarking of page URLs. Mobile Safari
+			on iOS is a prominent example of such a browser.</p>
+			<p>Original code by David Sanson found at:
+				<a href="http://www.davidsanson.com/gizmos/iphonlets-bookmarklet.html">http://www.davidsanson.com/gizmos/iphonlets-bookmarklet.html</a>
+			</p>
+			<p>Re-written/re-encoded version saves ~60 characters and uses
+				<a href="http://mmind.me/_?">http://mmind.me/_?</a> URL as link to
+				&ldquo;host&rdquo; the re-written <code>javascript:</code> URLs on a page.
+			</p>
+			<h2>Install</h2>
+			<p><strong>Mobile Safari</strong></p>
+			<p>Bookmark this
+				<a href="http://mmind.me/_?javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&amp;lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29">
+				iPhonelet</a> link and then edit the bookmark to remove the
+				<code>http://mmind.me/_?</code> address prefix. The edited bookmark address
+				should begin <code>javascript:function%20F…</code> You can also tap this
+				<a href="javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29" title="iPhonelet">
+				iPhonelet javascript:</a> link and use it recursively to try it and then use it
+				bookmark itself.
+			</p>
+			<p><strong>Safari</strong></p>
+			<p>Bookmark this
+				<a href="javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29" title="iPhonelet">
+				iPhonelet</a> <em>javascript:</em> link, <em>OR</em> make use of the 
+				<code>iphonelet.webloc</code> file from the repository.
+			</p>
+			<h2>Use</h2>
+			<p>From David Sanson's page:</p>
+			<blockquote>
+				<p>The iPhonlets bookmarklet changes all <code>href="javascript:blah"</code>
+					links on a page to <code>href="http://example.com/#javascript:blah"</code>
+					links. (As a visual cue, it surrounds converted links in a yellow box.)
+					Once this has been done, you can follow the link to
+					<code>http://example.com#javascript:blah</code> and bookmark the page. You
+					can then edit the bookmark, deleting the <code>http://example.com/#</code>
+					bit from the URL, leaving just the <code>javascript:blah</code> bit.
+				</p>
+				<p>The process is a pain, but it is less of a pain than any other option, and
+					it works.
+				</p>
+			</blockquote>
+			<p>One minor difference in this version is that instead of <code>http://example.com/#</code>
+				it uses<code>http://mmind.me/_?</code> as the link prefix.
+			</p>
+			<h2>Compatibility</h2>
+			<p>Tested with Safari 5.1.x and Mobile Safari 5.x. Should work with earlier versions.</p>
+			<p>Should work with Firefox and Chrome on the desktop (not sure why you'd use it,
+				but it does reveals/highlight bookmarklets on a page).
+			</p>
+			<p>May work with Chrome for Android, but unlikely to work with the default Android
+				Browser app.
+			</p>	
+			<hr>
+			<h2>License</h2>
+			<p>Not sure, Mr. Sanson wasn't clear on that. Some might observe it is just 14
+				lines of code and the encoded bookmark version here is only 260 characters.
+				Contact the original author for more information on the license status.
+			</p>
+			<div class="footer">get the source code on GitHub : <a href="http://github.com/mobilemind/iphonelet">mobilemind/iphonlet</a></div>
+		</div>
+	</body>
+</html>
