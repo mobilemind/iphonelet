@@ -15,12 +15,13 @@ as link to "host" the re-written `javascript:` URLs on a page.
  
 Bookmark this [iPhonelet](http://mmind.me/_?javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29)
 link and then edit the bookmark to remove the `http://mmind.me/_?` address prefix. The
-edited bookmark address should begin `javascript:function%20F…`
+edited bookmark address should begin `javascript:function%20F…` You can also visit the
+[iPhonelet hosted on github](http://mobilemind.github.com/iphonelet/) to try the bookmark.
  
 **Safari**
 
-Bookmark this <a href="javascript:function%20F%28%29{var%20i=0,L=document.links,A;for%28;i&lt;L.length;i++%29{A=L[i];if%28A.protocol=='javascript:'%29{A.href='http://mmind.me/_?'+A.href;A.style.padding='5px';A.style.border='thin%20solid%20#ccc';A.style.background='#ff3';A.style.color='#000'}}}F%28%29" title="iPhonelet">iPhonelet</a>
-_javascript:_ link, *OR* make use of an `iphonelet.webloc` file from the repository.
+Visit the [iPhonlet hosted on github](http://mobilemind.github.com/iphonelet/)
+ *OR* make use of an `iphonelet.webloc` file from the repository.
 
 ## Use ##
 
@@ -37,7 +38,7 @@ From David Sanson's page:
 One minor difference in this version is that instead of `http://example.com/#` it uses
 `http://mmind.me/_?` as the link prefix.
 
-#### Compatibility ####
+## Compatibility ##
 
 Tested with Safari 5.1.x and Mobile Safari 5.x. Should work with earlier versions.
 
